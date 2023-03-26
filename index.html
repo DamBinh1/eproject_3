@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping-cart</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav>
+            <div class="content-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Introduce</a></li>
+                </ul>
+                <form>
+                    <input type="text" name="search" placeholder="Search" />
+                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+            <!-- The Modal -->
+            <button id="cart">
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                Basket
+            </button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Basket</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Product</span>
+                            <span class="cart-price cart-header cart-column">Price</span>
+                            <span class="cart-quantity cart-header cart-column">Quantity</span>
+                        </div>
+                        <div class="cart-items">
+                            
+                        </div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Total:</strong>
+                            <span class="cart-total-price">0$</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Close</button>
+                        <button type="button" class="btn btn-primary order">Pay</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- content -->
+    <section class="wrapper">
+        <div class="products">
+            <ul>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://www.mirroroutlet.co.uk/media/catalog/product/cache/8c620cce223afa779614e23d4ad3456b/y/c/yc155-lifestyle-2.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Basic Rectangular Silver Edged Wall Mirror</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">250$</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">ADD TO Basket</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://www.mirroroutlet.co.uk/media/catalog/product/cache/8c620cce223afa779614e23d4ad3456b/y/c/yc164-lifestyle.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Modern Rectangular Silver Edged Wall Mirror</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">129$</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">ADD TO Basket</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://www.mirroroutlet.co.uk/media/catalog/product/cache/8c620cce223afa779614e23d4ad3456b/y/c/yc159-lifestyle.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Luxurious Rectangular Gold Edged Wall Mirror</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">159$</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">ADD TO Basket</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://www.mirroroutlet.co.uk/media/catalog/product/cache/8c620cce223afa779614e23d4ad3456b/y/c/yc156-lifestyle.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Basic Hexagon White Edged Wall Mirror</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">190$</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">ADD TO Basket</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://www.mirroroutlet.co.uk/media/catalog/product/cache/8c620cce223afa779614e23d4ad3456b/m/f/mf005-110cm-lifestyle.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Modern Round Black Edged Wall Mirror
+                        </h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">219$</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">ADD TO Basket</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://www.mirroroutlet.co.uk/media/catalog/product/cache/8c620cce223afa779614e23d4ad3456b/y/c/yc146-120x80-lifestyle.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Retro Ellipse White Edged Wall Mirror</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">115$</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">ADD TO Basket</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://www.mirroroutlet.co.uk/media/catalog/product/cache/8c620cce223afa779614e23d4ad3456b/y/c/yc150-lifestyle.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Basic Square Black Edged Wall Mirror</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">129$</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">ADD TO Basket</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://www.mirroroutlet.co.uk/media/catalog/product/cache/8c620cce223afa779614e23d4ad3456b/y/e/ye005-2x2-lifestyle.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Modern Square Window Wall Mirror</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">85$</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">ADD TO Basket</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- footer -->
+    <script src="main.js"></script>
+    <footer>
+        <div class="footer-item">
+            <div class="img-footer">
+                <img src="img/logo.png" alt="" />
+            </div>
+            <div class="social-footer">
+                <li><a target="_blank" href="https://www.facebook.com/thanhlongdev">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a></li>
+                <li><a target="_blank" href="https://github.com/long1211">
+                        <i class="fa fa-github-square" aria-hidden="true"></i>
+                    </a></li>
+
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
