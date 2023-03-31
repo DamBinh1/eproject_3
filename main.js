@@ -46,7 +46,6 @@ function updatecart() {
         total = total + (price * quantity)
     }
     document.getElementsByClassName("cart-total-price")[0].innerText = total + '$'
-    // Thay đổi text = total trong .cart-total-price. Chỉ có một .cart-total-price nên mình sử dụng [0].
 }
 // thay đổi số lượng sản phẩm
 var quantity_input = document.getElementsByClassName("cart-quantity-input");
