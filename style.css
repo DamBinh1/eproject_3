@@ -170,6 +170,7 @@ nav .content-nav ul li a:hover {
     font-weight: bold;
     font-size: 1.25em;
     color: #333;
+    
   }
   
   .cart-column {
@@ -302,11 +303,14 @@ nav .content-nav ul li a:hover {
   .products ul .img-product img {
     width: 100%;
   }
+  .products ul .img-product img:hover {
+    opacity: 0.7;
+  }
+  
   
   .content-product .content-product-h3 {
     padding: .5rem 0 5px 5px;
     overflow: hidden;
-    color: #222;
     font-weight: 500;
     font-size: 18px;
     max-height: 50px;
@@ -315,12 +319,19 @@ nav .content-nav ul li a:hover {
     line-height: 18px;
     margin: 0 0 5px;
   }
-  
+  .content-product .content-product-h3 a{
+    text-decoration: none;
+    color: #222;
+  }
+  .content-product .content-product-h3 a:hover{
+    color: #979393;
+  }
   .content-product .content-product-deltals {
     display: flex;
     justify-content: center;
     padding-top: 5px;
     padding-bottom: 10px;
+    overflow: hidden;
   }
   
   .main-product .content-product .content-product-deltals .price {
@@ -352,59 +363,4 @@ nav .content-nav ul li a:hover {
     background: #0275d8;
     display: flex;
 
-}
-.footer-item .img-footer {
-    align-items: center;
-    display: flex;
-}
-
-.footer-item .img-footer img {
-    width: 100%;
-}
-
-.footer-item .social-footer {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: flex-end;
-}
-
-.footer-item .social-footer li a {
-    color: #000000;
-    font-size: 2rem;
-}
-
-.footer-item .social-footer li:last-child {
-    margin-left: .5rem;
-}
-  /* footer */
-.footer-item {
-    padding: .5rem 2rem;
-    background: #0275d8;
-    display: flex;
-}
-
-.footer-item .img-footer {
-    align-items: center;
-    display: flex;
-}
-
-.footer-item .img-footer img {
-    width: 100%;
-}
-
-.footer-item .social-footer {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: flex-end;
-}
-
-.footer-item .social-footer li a {
-    color: #000000;
-    font-size: 2rem;
-}
-
-.footer-item .social-footer li:last-child {
-    margin-left: .5rem;
-}
+  }
